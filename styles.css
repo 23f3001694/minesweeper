@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 20px;
@@ -71,7 +71,8 @@ h1 {
     cursor: pointer;
 }
 
-#new-game, #play-again {
+#new-game,
+#play-again {
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
@@ -83,7 +84,8 @@ h1 {
     transition: all 0.3s ease;
 }
 
-#new-game:hover, #play-again:hover {
+#new-game:hover,
+#play-again:hover {
     background: #ff5252;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
@@ -147,9 +149,15 @@ main {
 }
 
 @keyframes explode {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .cell.flagged {
@@ -170,14 +178,30 @@ main {
 }
 
 /* Number colors */
-.cell[data-number="1"] { color: #3498db; }
-.cell[data-number="2"] { color: #27ae60; }
-.cell[data-number="3"] { color: #e74c3c; }
-.cell[data-number="4"] { color: #8e44ad; }
-.cell[data-number="5"] { color: #f39c12; }
-.cell[data-number="6"] { color: #1abc9c; }
-.cell[data-number="7"] { color: #34495e; }
-.cell[data-number="8"] { color: #e67e22; }
+.cell[data-number="1"] {
+    color: #3498db;
+}
+.cell[data-number="2"] {
+    color: #27ae60;
+}
+.cell[data-number="3"] {
+    color: #e74c3c;
+}
+.cell[data-number="4"] {
+    color: #8e44ad;
+}
+.cell[data-number="5"] {
+    color: #f39c12;
+}
+.cell[data-number="6"] {
+    color: #1abc9c;
+}
+.cell[data-number="7"] {
+    color: #34495e;
+}
+.cell[data-number="8"] {
+    color: #e67e22;
+}
 
 /* Difficulty-specific board sizes */
 .game-board.easy {
@@ -276,6 +300,18 @@ footer {
 
 .instructions li:last-child {
     border-bottom: none;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact p {
+    color: #bdc3c7;
+    font-size: 14px;
 }
 
 /* Responsive design */
